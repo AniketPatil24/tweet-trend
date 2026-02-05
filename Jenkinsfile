@@ -4,7 +4,7 @@ pipeline {
     }
 
     stages {
-        stage('Hello') {
+        stage('Checkout code') {
             steps {
                 git branch: 'main', url: 'https://github.com/AniketPatil24/tweet-trend.git'
             }
