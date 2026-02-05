@@ -4,9 +4,9 @@ pipeline {
     }
 
     stages {
-        stage('Hello') {
+        stage("build") {
             steps {
-                git branch: 'main', url: 'https://github.com/AniketPatil24/tweet-trend.git'
+                sh 'mvn clean deploy'
             }
         }
     }
